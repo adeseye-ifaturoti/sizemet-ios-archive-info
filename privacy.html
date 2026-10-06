@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy policy for Sizemet iOS Archive Transfer (Private): selected Google Drive access, local processing, archive storage, retention and revocation.">
+  <meta name="referrer" content="no-referrer">
+  <title>Archive-tool privacy policy | Sizemet iOS Archive Transfer (Private)</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header wrap">
+    <a class="wordmark" href="./" aria-label="Archive-tool information page">SIZEMET <span>Archive transfer</span></a>
+    <nav aria-label="Main navigation"><a href="./">Tool information</a></nav>
+  </header>
+  <main id="main" class="wrap policy">
+    <p class="eyebrow">Sizemet iOS Archive Transfer (Private)</p>
+    <h1>Archive-tool privacy policy</h1>
+    <p class="small">Effective date: 6 October 2026</p>
+    <p class="lead">This policy covers the private Google Drive archive-transfer utility and its information website. It does not replace the privacy policy for Sizemet's main product website or consumer app.</p>
+    <section aria-labelledby="operator"><h2 id="operator">1. Operator and purpose</h2>
+      <p>The Sizemet tool operator uses this local utility to store and retrieve private iOS development archives, supporting files and test evidence in a dedicated Google Drive folder, reducing unnecessary local storage while retaining files needed for current development.</p>
+      <p>Privacy and support contact: <a href="mailto:sizemett@gmail.com">sizemett@gmail.com</a>. This is an operator-controlled development utility, not a public file-sharing service or customer account system.</p>
+    </section>
+    <section aria-labelledby="access"><h2 id="access">2. Google data accessed</h2>
+      <p>The integration requests Google's selected-file permission, <code>https://www.googleapis.com/auth/drive.file</code>. It can access files created by the integration or explicitly selected and authorised for it. It does not request whole-Drive access, Gmail, Calendar or Contacts access.</p>
+      <p>To confirm the correct destination and transfer files, the local helper reads the Google account email address, folder identity and ownership, relevant capabilities, and authorised file metadata such as names, identifiers, parent folders, types, sizes and available checksums. It reads the contents of requested archive files and uploads development packages chosen by the operator.</p>
+      <p>Archives may contain development source code, assets, logs and test evidence. This workflow is not intended for production customer records or customer body-scan data. The operator is responsible for reviewing what is included in an archive.</p>
+      <p>The underlying selected-file permission can allow editing or deleting authorised items. The current bounded helper exposes only listing, uploading and downloading; it does not expose cloud deletion, whole-Drive mirroring or permission-sharing commands. Folder selection does not automatically authorise every existing or future child file.</p>
+    </section>
+    <section aria-labelledby="use"><h2 id="use">3. How data is used</h2>
+      <p>Google data is used to authenticate the authorised connection, confirm the account and dedicated destination, find selected archive items, transfer requested files, verify integrity and maintain private transfer receipts. Retrieved files may be used by the operator's authorised local development tools for the requested work.</p>
+      <p>This integration does not use Google user data for advertising, sale, profiling or training general-purpose artificial intelligence or machine-learning models. The public information website does not receive Google Drive contents, account credentials or OAuth tokens.</p>
+      <p>Sizemet iOS Archive Transfer (Private)'s use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+    </section>
+    <section aria-labelledby="storage"><h2 id="storage">4. Storage and safeguards</h2>
+      <p>Archive packages are stored in the operator's private Google Drive folder. Files needed for work, transfer receipts and integrity checks may be stored on the operator's Mac. OAuth credentials are kept in a separate, owner-restricted local configuration and are not included in these public pages or published development evidence.</p>
+      <p>Transfers use Google's HTTPS endpoints. The local helper checks the intended account, selected-file scope and exact archive destination, skips Drive shortcuts and uses bounded transfers. New packages use unique names; downloads use new destinations and checksum verification.</p>
+      <p>These controls reduce accidental access and overwrites; they are not a guarantee against every security incident. The workflow depends on the security of the operator's Mac, Google account and authorised development tools.</p>
+    </section>
+    <section aria-labelledby="sharing"><h2 id="sharing">5. Sharing and service providers</h2>
+      <p>Google processes and stores the data needed to provide Google Drive and OAuth authentication. The archive-transfer connection does not make files public or change folder-sharing permissions. Archive data is not sold or published by this integration. Any use by another development service or collaborator must be separately authorised by the operator; these public information pages grant no such access.</p>
+      <p>This information website is hosted by GitHub Pages. It uses no application analytics, advertising trackers, forms or login scripts. GitHub may process routine request information, including visitor IP addresses, to operate and secure its hosting. See <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub's privacy statement</a> and <a href="https://policies.google.com/privacy">Google's privacy policy</a> for their practices.</p>
+    </section>
+    <section aria-labelledby="retention"><h2 id="retention">6. Retention and deletion</h2>
+      <p>Archive packages and necessary receipts are retained until the operator decides they are no longer needed for development, recovery or evidence. There is no automatic fixed-date deletion policy. Temporary local copies may be cleared after successful integrity verification and confirmation that needed recovery data remains available.</p>
+      <p>The operator can delete archive files using Google Drive and remove retained local copies. Cloud deletion is not a command offered by the current transfer helper. Google controls the behaviour of Drive's bin and any provider-side retention. Revoking access does not automatically delete existing archives or local copies.</p>
+    </section>
+    <section aria-labelledby="control"><h2 id="control">7. Access controls and revocation</h2>
+      <p>The operator may stop the utility and revoke its Google authorisation through <a href="https://myaccount.google.com/connections">Google Account connections</a>. Revocation prevents future authenticated access until a new authorisation is granted. Files added by another app may need explicit selection before they are accessible.</p>
+      <p>Access expiry and provider outages can still require reconnection. Moving a Google OAuth project out of Testing is not a promise that credentials never expire, nor does it widen the selected-file permission.</p>
+    </section>
+    <section aria-labelledby="changes"><h2 id="changes">8. Questions and policy changes</h2>
+      <p>Contact <a href="mailto:sizemett@gmail.com">sizemett@gmail.com</a> about access, correction, removal or a suspected issue involving this utility. Material changes to data use or access will require an updated policy and any necessary operator authorisation. The effective date above identifies this policy version.</p>
+    </section>
+  </main>
+  <footer class="site-footer wrap"><a href="./">Archive-tool information page</a><span>Separate from the main Sizemet website</span></footer>
+</body>
+</html>

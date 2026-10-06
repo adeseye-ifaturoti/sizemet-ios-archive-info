@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Information about Sizemet iOS Archive Transfer (Private), a local utility for securely transferring selected development archives to and from Google Drive.">
+  <meta name="referrer" content="no-referrer">
+  <title>Sizemet iOS Archive Transfer (Private)</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header wrap">
+    <a class="wordmark" href="./" aria-label="Archive-tool information page">SIZEMET <span>Archive transfer</span></a>
+    <nav aria-label="Main navigation"><a href="privacy.html">Privacy policy</a></nav>
+  </header>
+  <main id="main" class="wrap">
+    <section class="hero" aria-labelledby="page-title">
+      <p class="eyebrow">Private development utility</p>
+      <h1 id="page-title">Sizemet iOS Archive Transfer <span>(Private)</span></h1>
+      <p class="lead">Move selected development archives between a Mac and Google Drive. Keep active development local; retrieve archived files only when needed.</p>
+      <p class="notice"><strong>This is an information page, not an archive portal.</strong> It does not sign you in, upload files, expose archive contents or connect to your Google account.</p>
+      <a class="button" href="privacy.html">Read the archive-tool privacy policy <span aria-hidden="true">↗</span></a>
+    </section>
+    <section class="section" aria-labelledby="purpose-title">
+      <p class="eyebrow">What the tool does</p>
+      <h2 id="purpose-title">A small bridge for private development files.</h2>
+      <p>This operator-controlled utility uses rclone and a bounded local transfer helper to store and retrieve Sizemet iOS development archives, supporting files and test evidence in a dedicated private Google Drive folder. Xcode, active source files and the build tools needed for current work remain on the Mac.</p>
+      <ol class="steps">
+        <li><h3>Select and authorise</h3><p>The operator authorises specific files and the dedicated archive folder through Google. The connection requests selected-file access (<code>drive.file</code>), not access to the whole Drive.</p></li>
+        <li><h3>Transfer when needed</h3><p>The local helper lists authorised archive items, uploads uniquely named packages or downloads a requested package into a new local destination. It does not mirror or automatically synchronise the entire Drive.</p></li>
+        <li><h3>Verify before cleanup</h3><p>Checksums confirm retrieved files and download-back verification checks new uploads. Local disposable copies are cleared only through a separate, authorised cleanup process after verification.</p></li>
+      </ol>
+    </section>
+    <section class="section boundary" aria-labelledby="boundary-title">
+      <div><p class="eyebrow">Clear boundaries</p><h2 id="boundary-title">Public explanation.<br>Private archive.</h2></div>
+      <div>
+        <p>This utility is intended for the operator's private development workflow, not public customer sign-up. Publishing these pages does not share the Google Drive folder or release the iOS app.</p>
+        <p>Selected-file permission is not a permanent permission for every future file in a folder. Files added through another app may require explicit selection before this utility can access them.</p>
+        <p>These pages are separate from Sizemet's main product website and do not replace that website's homepage or privacy policy.</p>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="contact-title">
+      <p class="eyebrow">Operator contact</p><h2 id="contact-title">Questions about this tool?</h2>
+      <p>For archive-transfer support or privacy questions, contact the Sizemet tool operator at <a href="mailto:sizemett@gmail.com">sizemett@gmail.com</a>.</p>
+      <p class="small">Do not send passwords, OAuth credentials or private archive contents to this public website.</p>
+    </section>
+  </main>
+  <footer class="site-footer wrap"><span>Sizemet iOS Archive Transfer (Private)</span><a href="privacy.html">Archive-tool privacy policy</a></footer>
+</body>
+</html>
